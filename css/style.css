@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#css-zen-garden {
+    position:relative;
+    display: inline-block;
+    padding: 0px 20px 0px 32px;
+    color: #809b7e;
+    background: url(../img/bamboo.png);
+}
+
+body {
+    font: 'Libre Baskerville', sans-serif;
+    font-size: 80%;
+    color: #325050;
+    background: #fff;
+}
+
+.intro a, .intro a:visited {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px 0px 32px;
+    color: #809b7e;
+    text-transform: uppercase;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+h1, h2 {
+    padding: 0 10% 20%;
+    margin: 0;
+    color: #fff;
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    content: "";
+    width: 180px;
+    height: 180px;
+    margin: 20px 20px 0px 0px;
+    background: url(../img/zen.svg);
+    background-size: 100%;
+    opacity: 60%;
+}
+
+h2 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: #c5c5c5;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h2::before {
+    content: "";
+    padding: 100px;
+}
+
+header {
+    background: url(../img/huntington.png);
+    height: 260px;
+}
+
+.summary, .preamble, .participation, .main, .requirements, .benefits {
+    width: 66%;
+    float: left;
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    width: 33%;
+    clear: right;
+    float: right;
+    background: #8abc9f80;
+}
+
+footer {
+    clear: both;
+    padding: 10px 10px;
+    background: #134347;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px 20px 10px;
+    position: inherit;
+    color: #c0cac3;
+    font-size: 45px;
+}
+
+a {
+    color: #0d8ba1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0ea4be;
+    text-decoration: underline;
+}
