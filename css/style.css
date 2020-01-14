@@ -9,15 +9,12 @@
 }
 
 #css-zen-garden {
-    position:relative;
-    display: inline-block;
-    padding: 0px 20px 0px 32px;
     color: #809b7e;
     background: url(../img/bamboo.png);
 }
 
 body {
-    font: 'Libre Baskerville', sans-serif;
+    font-family: 'IBM Flex Mono', sans-serif;
     font-size: 80%;
     color: #325050;
     background: #fff;
@@ -26,8 +23,7 @@ body {
 .intro a, .intro a:visited {
     position: relative;
     display: inline-block;
-    padding: 0px 10px 0px 32px;
-    color: #809b7e;
+    color: #0d8ba1;
     text-transform: uppercase;
 }
 
@@ -79,38 +75,77 @@ h2::before {
     padding: 100px;
 }
 
+h3 {
+    color: darkolivegreen;
+}
+
 header {
     background: url(../img/huntington.png);
     height: 360px;
 }
 
-footer {
-    clear: both;
-    padding: 10px 10px;
-    background: #134347;
-    text-align: center;
-}
-
-footer a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    padding: 20px 10px 20px 10px;
-    position: inherit;
-    color: #c0cac3;
-    font-size: 45px;
-}
-
 a {
     color: #0d8ba1;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a:hover {
     color: #0ea4be;
-    text-decoration: underline;
 }
 
-.summary {
+footer {
+    padding: 10px 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: #134347;
+    text-align: center;
+}
+
+
+footer a, footer a:visited {
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px 20px 10px;
+    color: #c0cac3;
+    font-size: 45px;
+}
+
+.summary, .preamble, .benefits {
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2;
+    background: #fff;
+}
+
+.explanation, .participation, .requirements {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2;
+    background: #dff8dd3d;
+}
+
+.sidebar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2;
+    background: #dff8dd3d;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    border-bottom: solid #444e443d;
+}
+
+.design-archives {
+    text-align: center;
 }
