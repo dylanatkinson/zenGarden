@@ -8,6 +8,8 @@
     margin: 0;
 }
 
+/* setting whole page background */
+
 #css-zen-garden {
     color: #809b7e;
     background: url(../img/bamboo.png);
@@ -20,15 +22,11 @@ body {
     background: #fff;
 }
 
-.intro a, .intro a:visited {
+.intro a {
     position: relative;
     display: inline-block;
     color: #0d8ba1;
     text-transform: uppercase;
-}
-
-.page-wrapper {
-    position: relative;
 }
 
 h1, h2 {
@@ -46,6 +44,8 @@ h1 {
     text-transform: uppercase;
     text-shadow: grey 2px 2px;
 }
+
+/* used to align the zen logo in the header and set opacity */
 
 h1::before {
     display: inline-block;
@@ -69,6 +69,8 @@ h2 {
     font-size: 20px;
     font-style: italic;
 }
+
+/* used to align the h2 in the header to the h1 element */
 
 h2::before {
     content: "";
@@ -103,13 +105,14 @@ footer {
 }
 
 
-footer a, footer a:visited {
+footer a {
     width: 40px;
     height: 40px;
     padding: 20px 10px 20px 10px;
     color: #c0cac3;
     font-size: 45px;
 }
+
 
 .summary, .preamble, .benefits {
     padding-top: 20px;
@@ -141,11 +144,14 @@ footer a, footer a:visited {
     background: #dff8dd3d;
 }
 
+/* used to make the items at the foot of the page align side-by-side, can't seem to get this to align evenly */
+
+.sidebar .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .sidebar ul {
     list-style-type: none;
     border-bottom: solid #444e443d;
-}
-
-.design-archives {
-    text-align: center;
 }
