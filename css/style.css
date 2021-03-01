@@ -1,157 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
+/* Resetting the default page margins */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
 }
 
-/* setting whole page background */
+/* General page settings */
 
 #css-zen-garden {
-    color: #809b7e;
-    background: url(../img/bamboo.png);
+    background-image: url(/zenGarden/img/masaaki-komori-fzHaSRdAi68-unsplash.jpg);
+    background-size: cover;
+    color: #333;
 }
 
-body {
-    font-family: 'IBM Flex Mono', sans-serif;
-    font-size: 80%;
-    color: #325050;
-    background: #fff;
+#css-zen-garden a {
+    color: crimson;
 }
 
-.intro a {
-    position: relative;
-    display: inline-block;
-    color: #0d8ba1;
-    text-transform: uppercase;
+.page-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 
-h1, h2 {
-    padding: 0 25%;
-    margin: 0;
-    color: #fff;
+.page-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
-h1 {
-    padding-top: 0;
-    padding-bottom: 5px;
-    border-bottom: none;
-    font-family: 'IBM Plex Mono', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
-    text-shadow: grey 2px 2px;
-}
-
-/* used to align the zen logo in the header and set opacity */
-
-h1::before {
-    display: inline-block;
-    position: relative;
-    top: 70px;
-    content: "";
-    width: 180px;
-    height: 180px;
-    margin: 20px 20px 0px 0px;
-    background: url(../img/zen.svg);
-    background-size: 100%;
-    opacity: 60%;
-}
-
-h2 {
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 30px;
-    border-top: none;
-    color: #c5c5c5;
-    font-size: 20px;
-    font-style: italic;
-}
-
-/* used to align the h2 in the header to the h1 element */
-
-h2::before {
-    content: "";
-    padding: 100px;
-}
-
-h3 {
-    color: darkolivegreen;
+.intro, .main, .sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 10%;
 }
 
 header {
-    background: url(../img/huntington.png);
-    height: 360px;
+    color: crimson;
+    margin: 20px 0;
 }
 
-a {
-    color: #0d8ba1;
-    text-decoration: none;
-    text-transform: uppercase;
+header h1 {
+    font-size: 48px;
 }
 
-a:hover {
-    color: #0ea4be;
-}
-
-footer {
-    padding: 10px 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    background: #134347;
-    text-align: center;
-}
-
-
-footer a {
-    width: 40px;
-    height: 40px;
-    padding: 20px 10px 20px 10px;
-    color: #c0cac3;
-    font-size: 45px;
-}
-
-
-.summary, .preamble, .benefits {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 2;
-    background: #fff;
-}
-
-.explanation, .participation, .requirements {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 2;
-    background: #dff8dd3d;
-}
-
-.sidebar {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 2;
-    background: #dff8dd3d;
-}
-
-/* used to make the items at the foot of the page align side-by-side, can't seem to get this to align evenly */
-
-.sidebar .wrapper {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    border-bottom: solid #444e443d;
+.summary, .summary p {
+    margin: 20px 0;
 }
